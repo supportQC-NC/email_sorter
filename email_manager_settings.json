@@ -9,28 +9,28 @@
     "max_emails": "100",
     "rules": [
         {
-            "field": "Corps",
+            "field": "Sujet",
             "condition": "contient",
-            "keyword": "Stoyann Velten",
-            "folder": "Urgent"
-        },
-        {
-            "field": "Corps",
-            "condition": "contient",
-            "keyword": "Stoyann",
-            "folder": "Urgent"
-        },
-        {
-            "field": "Expéditeur",
-            "condition": "contient",
-            "keyword": "lloyd@allwoods.nc",
-            "folder": "all_woods"
+            "keyword": "Erreur",
+            "folder": "erreurs"
         },
         {
             "field": "Sujet",
             "condition": "contient",
-            "keyword": "Undelivered",
+            "keyword": "Echec",
             "folder": "erreurs"
+        },
+        {
+            "field": "Sujet",
+            "condition": "contient",
+            "keyword": "Aucun",
+            "folder": "erreurs"
+        },
+        {
+            "field": "Corps",
+            "condition": "contient",
+            "keyword": "Velten",
+            "folder": "Urgent"
         }
     ]
 }

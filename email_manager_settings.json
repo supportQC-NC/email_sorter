@@ -11,26 +11,8 @@
         {
             "field": "Sujet",
             "condition": "contient",
-            "keyword": "Erreur",
-            "folder": "erreurs"
-        },
-        {
-            "field": "Sujet",
-            "condition": "contient",
-            "keyword": "Echec",
-            "folder": "erreurs"
-        },
-        {
-            "field": "Sujet",
-            "condition": "contient",
-            "keyword": "Aucun",
-            "folder": "erreurs"
-        },
-        {
-            "field": "Corps",
-            "condition": "contient",
-            "keyword": "Velten",
-            "folder": "Urgent"
+            "keyword": "support",
+            "folder": "rapport"
         }
     ]
 }

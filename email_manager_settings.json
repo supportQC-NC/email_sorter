@@ -2,17 +2,68 @@
     "email": "support@robot-nc.com",
     "server": "imap.hostinger.com",
     "port": "993",
+    "preserve_unread": true,
     "cc_enabled": true,
     "cc_folder": "EN_COPIE",
-    "cc_mark_read": false,
+    "cc_mark_read_after": false,
     "cc_skip_important": true,
+    "cc_skip_recent": false,
     "max_emails": "100",
+    "processing_mode": "peek",
+    "filter_unread_only": false,
+    "filter_date": false,
+    "filter_days": "7",
+    "dry_run": false,
+    "backup_before_move": false,
+    "confirm_actions": true,
     "rules": [
         {
             "field": "Sujet",
             "condition": "contient",
-            "keyword": "support",
-            "folder": "rapport"
+            "keyword": "a lire",
+            "action": "Déplacer vers",
+            "folder": "CA",
+            "case_sensitive": false,
+            "priority": 2,
+            "priority_text": "Normal",
+            "stop_processing": false,
+            "mark_after_action": false
+        },
+        {
+            "field": "Sujet",
+            "condition": "contient",
+            "keyword": "facture",
+            "action": "Déplacer vers",
+            "folder": "CA",
+            "case_sensitive": false,
+            "priority": 2,
+            "priority_text": "Normal",
+            "stop_processing": false,
+            "mark_after_action": false
+        },
+        {
+            "field": "Expéditeur",
+            "condition": "contient",
+            "keyword": "krysto",
+            "action": "Déplacer vers",
+            "folder": "rapport",
+            "case_sensitive": false,
+            "priority": 2,
+            "priority_text": "Normal",
+            "stop_processing": false,
+            "mark_after_action": false
+        },
+        {
+            "field": "Sujet ou Corps",
+            "condition": "contient",
+            "keyword": "velten",
+            "action": "Déplacer vers",
+            "folder": "important",
+            "case_sensitive": false,
+            "priority": 2,
+            "priority_text": "Normal",
+            "stop_processing": false,
+            "mark_after_action": false
         }
     ]
 }

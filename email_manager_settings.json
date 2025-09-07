@@ -1,0 +1,36 @@
+{
+    "email": "support@robot-nc.com",
+    "server": "imap.hostinger.com",
+    "port": "993",
+    "cc_enabled": true,
+    "cc_folder": "EN_COPIE",
+    "cc_mark_read": false,
+    "cc_skip_important": true,
+    "max_emails": "100",
+    "rules": [
+        {
+            "field": "Corps",
+            "condition": "contient",
+            "keyword": "Stoyann Velten",
+            "folder": "Urgent"
+        },
+        {
+            "field": "Corps",
+            "condition": "contient",
+            "keyword": "Stoyann",
+            "folder": "Urgent"
+        },
+        {
+            "field": "Expéditeur",
+            "condition": "contient",
+            "keyword": "lloyd@allwoods.nc",
+            "folder": "all_woods"
+        },
+        {
+            "field": "Sujet",
+            "condition": "contient",
+            "keyword": "Undelivered",
+            "folder": "erreurs"
+        }
+    ]
+}
